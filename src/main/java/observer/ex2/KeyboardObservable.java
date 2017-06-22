@@ -40,8 +40,9 @@ public class KeyboardObservable {
     }
 
     public void listenKeys() {
+        Scanner scanner = new Scanner(System.in);
         while (true) {
-            String input = new Scanner(System.in).next();
+            String input = scanner.next();
             updateObservers(input);
         }
     }
